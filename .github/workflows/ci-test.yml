@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
       - main
-      - add-cl-test-badge
 
 jobs:
   lint:
@@ -27,7 +26,3 @@ jobs:
 
       - name: Run pre-commit hooks
         run: pre-commit run --all-files
-      - name: This will fail
-        run: |
-          echo "This step will fail intentionally"
-          exit 1
